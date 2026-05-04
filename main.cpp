@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main() {
+void result() {
 
     cout << endl << "Inheritance" << endl;
     Drink *drink = new Drink("Water", 500, 20.5);
@@ -46,5 +46,5 @@ int main() {
         cout << endl;
     }
 
-    return 0;
+    return;
 }
