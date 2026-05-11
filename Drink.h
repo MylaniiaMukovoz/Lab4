@@ -5,7 +5,7 @@
 using namespace std;
 
 class Drink {
-    protected:
+    private:
         string name;
         int volume;
         double price;

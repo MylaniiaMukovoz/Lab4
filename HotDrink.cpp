@@ -21,3 +21,7 @@ void HotDrink::showInfo(){
 void HotDrink::heatUp(){
     heatLevel++;
 }
+
+void HotDrink::heatUp(int heat){
+    cout << "Heat: " << heat << endl;
+}

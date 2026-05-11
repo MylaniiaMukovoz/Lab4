@@ -6,7 +6,7 @@
 using namespace std;
 
 class ColdDrink : public Drink{
-    protected:
+    private:
         bool hasIce;
     public:
         ColdDrink(string name, int volume, double price, bool hasIce);

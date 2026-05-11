@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void result() {
+int main() {
 
     cout << endl << "Inheritance" << endl;
     Drink *drink = new Drink("Water", 500, 20.5);
@@ -16,8 +16,7 @@ void result() {
 
     HotDrink *tea = new HotDrink("Tea", 300, 35.0, 5);
     tea->showInfo();
-    tea->heatUp();
-    cout << "After heating: " << endl;
+    tea->heatUp(4);
     tea->showInfo();
     cout << endl;
 
@@ -39,12 +38,9 @@ void result() {
 
     cout << endl << "Polymorphism" << endl;
 
-    Drink* drinks[5] = {drink, tea, cola, juice, cocktail};
+    Drink *drink1 = new ColdDrink("Cola", 250, 32.0, false);
+    drink1->showInfo();
+    cout << endl;
 
-    for (int i = 0; i < 5; i++) {
-        drinks[i]->showInfo();
-        cout << endl;
-    }
-
-    return;
+    return  0;
 }

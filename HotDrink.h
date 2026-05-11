@@ -6,11 +6,12 @@
 using namespace std;
 
 class HotDrink : public Drink {
-    protected:
+    private:
         int heatLevel;
     public:
         HotDrink(string name, int volume, double price, int heatLevel);
         void heatUp();
+        void heatUp(int heat);
         int getHeatLevel();
         void showInfo() override;
 };
